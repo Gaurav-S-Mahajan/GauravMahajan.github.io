@@ -307,6 +307,7 @@ header.site-header {
   gap: 1.8rem;
   margin-top: 1.5rem;
 }
+
 .project-card {
   background: var(--card);
   border-radius: var(--radius);
@@ -318,28 +319,40 @@ header.site-header {
   cursor: pointer;
   outline: none;
 }
+
 .project-card:hover, .project-card:focus {
   background: var(--accent);
   color: var(--bg);
   transform: translateY(-5px) scale(1.032);
   box-shadow: 0 6px 32px rgba(25,195,255,0.16);
 }
-.project-thumb {
-  width: 100%;
-  height: 180px;
-  object-fit: cover;
-  background: #192334;
-}
-.project-body {
-  padding: 1.1em 1em 1.2em 1em;
-}
+
+/* Ensure the project title (h3) stays visible on hover/focus */
 .project-card h3 {
   margin-top: 0;
   margin-bottom: .7em;
   font-size: 1.23rem;
   font-weight: 700;
   color: var(--accent);
+  transition: color var(--transition);
 }
+
+.project-card:hover h3,
+.project-card:focus h3 {
+  color: var(--bg) !important;
+}
+
+.project-thumb {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  background: #192334;
+}
+
+.project-body {
+  padding: 1.1em 1em 1.2em 1em;
+}
+
 .project-link {
   color: var(--accent);
   font-weight: 600;
@@ -349,6 +362,7 @@ header.site-header {
   display: inline-block;
   transition: color var(--transition);
 }
+
 .project-card:hover .project-link,
 .project-card:focus .project-link {
   color: var(--bg);
