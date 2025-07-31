@@ -218,6 +218,16 @@ header.site-header {
   font-size: 1.16rem;
 }
 
+/* <<< UPDATED FOR SOCIAL ICONS IN HERO AND CONTACT SECTIONS >>> */
+.hero-socials img,
+.contact-socials img {
+  width: 27px;
+  height: 27px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+/* <<< END UPDATE >>> */
+
 .btn {
   padding: 0.82em 2.1em;
   border-radius: 8px;
