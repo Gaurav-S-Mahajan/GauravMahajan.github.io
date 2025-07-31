@@ -636,3 +636,29 @@ body.light .contact-form input, body.light .contact-form textarea {
   .nav-links.open { display: flex; }
   .nav-toggle { display: flex; }
 }
+
+/* <-- Add the following block below --> */
+
+body.light .nav-links a,
+body.light .nav-links button {
+  color: #fff !important;
+}
+
+body.light .skill-title {
+  color: #fff !important;
+}
+
+body.light .project-card .project-body p {
+  color: #fff !important;
+}
+
+body.light .timeline-content ul,
+body.light .timeline-content ul li {
+  color: #fff !important;
+}
+
+body.light .nav-links a:hover,
+body.light .nav-links button:hover {
+  background: var(--accent);
+  color: var(--bg-light) !important;
+}
